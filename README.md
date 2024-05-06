@@ -1,2 +1,16 @@
 # Relations
-A console-based relations checker for sets written in C++.
+A console-based relations checker for sets written in C++. 
+
+# Functionality
+Can be used to check for the basic properties of relations, including reflexivity, irreflexivity, transitivity, symmetry, & antisymmetry. Can also be used to check if a relation is an equivalence relation or partially-ordered set. 
+
+# Usage
+Usage is fairly straightforward. Sets and relations can be input in any regular format, including just numbers (ex. 1234 for set, 1112223344 for relations), or in a more typical set/relation style (ex. {1, 2, 3, 4} for set, {(1, 1), (1, 2), (2, 2), (3, 3), (4, 4)} for relations).
+
+# Runtime
+The runtimes of each function are listed next to their corresponding input key. 
+Reflexivity and irreflexivity both run in O(mn) time, with m representing the number of digits in the set and n representing the number of relational pairs. The "Check All" feature runs in O(n^2) in many cases, but can run in O(mn) worst case if the number of digits in the set exceeds the number of relational pairs. 
+Symmetry runs in O(n) time, and transitivity, antisymmetry, equivalence relation, and partially-ordered set all run in O(n^2) time.
+
+# Future
+I hope to modify this one day to fit all possible values (rather than just integers). Initially, I created this for fun after taking MATH 301 (Discrete Mathematics), where most, if not all of our examples were using integers, so it had not even crossed my mind to consider other inputs. 
