@@ -5,7 +5,7 @@ A console-based relations checker for sets written in C++.
 Can be used to check for the basic properties of relations, including reflexivity, irreflexivity, transitivity, symmetry, & antisymmetry. Can also be used to check if a relation is an equivalence relation or partially-ordered set. 
 
 # Usage
-Usage is fairly straightforward. Sets and relations can be input in any regular format, including just numbers (ex. 1234 for set, 1112223344 for relations), or in a more typical set/relation style (ex. {1, 2, 3, 4} for set, {(1, 1), (1, 2), (2, 2), (3, 3), (4, 4)} for relations).
+Usage is fairly straightforward. Sets and relations can be integer input in any regular format, including just numbers (ex. 1234 for set, 1112223344 for relations), or in a more typical set/relation style (ex. {1, 2, 3, 4} for set, {(1, 1), (1, 2), (2, 2), (3, 3), (4, 4)} for relations). Handling spaces, brackets, parentheses, and commas is built into the relation handling, but other values are not, so ensure the input only contains these characters.
 
 # Runtime
 The runtimes of each function are listed next to their corresponding input key. 
