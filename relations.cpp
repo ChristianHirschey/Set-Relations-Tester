@@ -175,6 +175,8 @@ int main() {
                 if(tran) properties.push_back("transitive");
                 if(symm) properties.push_back("symmetric");
                 if(anti) properties.push_back("antisymmetric");
+                if(rflx && tran && symm) properties.push_back("an equivalence relation");
+                if(rflx && tran && anti) properties.push_back("a partially-ordered set");
 
                 cout << "This relation is ";
                 for(int i = 0; i < properties.size(); i++) {
